@@ -8,7 +8,7 @@ export function AboutSection() {
       <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2 lg:gap-20 lg:px-10">
         {/* Text */}
         <Reveal>
-          <p className="text-xs font-semibold uppercase tracking-[0.45em] text-primary/80">
+          <p className="text-xs font-semibold uppercase tracking-[0.45em] text-secondary">
             About Yashogaatha
           </p>
           <h2 className="mt-5 font-display text-4xl font-medium leading-tight text-foreground sm:text-5xl">
@@ -31,7 +31,7 @@ export function AboutSection() {
         {/* Image composition */}
         <Reveal delay={0.15} className="relative">
           <div className="relative pb-14 pl-0 sm:pl-14 sm:pb-14">
-            <div className="overflow-hidden rounded-lg shadow-xl">
+            <div className="overflow-hidden rounded-lg shadow-soft">
               <img
                 src={ABOUT_IMAGES.primary}
                 alt="Wedding mandap decorated with flowers at sunset"
@@ -41,7 +41,7 @@ export function AboutSection() {
                 className="aspect-[4/5] w-full object-cover"
               />
             </div>
-            <div className="absolute bottom-0 left-0 hidden w-2/5 overflow-hidden rounded-lg shadow-xl ring-8 ring-lavender-soft sm:block">
+            <div className="absolute bottom-0 left-0 hidden w-2/5 overflow-hidden rounded-lg shadow-float ring-8 ring-lavender-soft sm:block">
               <img
                 src={ABOUT_IMAGES.secondary}
                 alt="Intimate garden dinner with lanterns and candles"

@@ -58,7 +58,7 @@ export function HeroSection() {
         >
           <a
             href="#contact"
-            className="group inline-flex items-center gap-2 rounded-full bg-primary px-8 py-3.5 text-sm font-semibold text-primary-foreground shadow-lg transition-colors duration-300 hover:bg-primary/90"
+            className="group inline-flex items-center gap-2 rounded-full bg-primary px-8 py-3.5 text-sm font-semibold text-primary-foreground shadow-float transition-colors duration-300 hover:bg-primary-hover"
           >
             Plan Your Event
             <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
