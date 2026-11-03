@@ -7,7 +7,7 @@ export function ServicesSection() {
     <section id="services" className="scroll-mt-24 bg-background py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <Reveal className="mx-auto max-w-2xl text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.45em] text-primary/80">
+          <p className="text-xs font-semibold uppercase tracking-[0.45em] text-secondary">
             Our Services
           </p>
           <h2 className="mt-5 font-display text-4xl font-medium leading-tight text-foreground sm:text-5xl">

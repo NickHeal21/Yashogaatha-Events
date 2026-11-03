@@ -28,7 +28,7 @@ export function WhyChooseUsSection() {
     <section className="bg-primary py-24 text-primary-foreground lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <Reveal className="mx-auto max-w-2xl text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.45em] text-primary-foreground/70">
+          <p className="text-xs font-semibold uppercase tracking-[0.45em] text-secondary">
             Why Choose Us
           </p>
           <h2 className="mt-5 font-display text-4xl font-medium leading-tight sm:text-5xl">
@@ -40,7 +40,7 @@ export function WhyChooseUsSection() {
           {PRINCIPLES.map((principle, index) => (
             <Reveal key={principle.title} delay={index * 0.1}>
               <div className="border-t border-primary-foreground/25 pt-6">
-                <span className="font-display text-sm tracking-[0.3em] text-primary-foreground/60">
+                <span className="font-display text-sm tracking-[0.3em] text-secondary">
                   {String(index + 1).padStart(2, "0")}
                 </span>
                 <h3 className="mt-3 font-display text-2xl font-medium">

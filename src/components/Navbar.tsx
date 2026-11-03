@@ -73,7 +73,7 @@ export function Navbar() {
             className={cn(
               "rounded-full px-6 py-2.5 text-sm font-semibold transition-colors duration-300",
               solid
-                ? "bg-primary text-primary-foreground hover:bg-primary/90"
+                ? "bg-primary text-primary-foreground hover:bg-primary-hover"
                 : "bg-background text-primary hover:bg-background/90"
             )}
           >

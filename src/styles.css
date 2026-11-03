@@ -5,15 +5,16 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * Yashogaatha Events — design system.
+ * Yashogaatha Events — design system ("Regal Grandeur").
  *
- * Brand: deep elegant purple + white, very light lavender accents.
- * Editorial, premium, restrained. All colors in oklch.
+ * Deep royal plum (#2A103D) anchored by champagne gold (#C5A059) accents,
+ * mist lavender layering (#EBE1F5) and luminous champagne-tinted whites.
+ * Headlines in Playfair Display, body in Plus Jakarta Sans.
  */
 
 @theme {
-  --font-display: "Cormorant Garamond", "Georgia", serif;
-  --font-body: "Karla", "Helvetica Neue", sans-serif;
+  --font-display: "Playfair Display", "Georgia", serif;
+  --font-body: "Plus Jakarta Sans", "Helvetica Neue", sans-serif;
 }
 
 @theme inline {
@@ -31,6 +32,7 @@
   --color-popover-foreground: var(--popover-foreground);
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
+  --color-primary-hover: var(--plum-hover);
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
   --color-muted: var(--muted);
@@ -46,57 +48,70 @@
   --color-lavender: var(--lavender);
   --color-lavender-soft: var(--lavender-soft);
   --color-deep: var(--deep);
+  --color-gold: var(--gold);
+  /* Ethereal plum-tinted elevation */
+  --shadow-soft: 0 18px 44px -20px rgb(42 16 61 / 0.18);
+  --shadow-float: 0 24px 60px -24px rgb(42 16 61 / 0.28);
 }
 
 :root {
   --radius: 0.25rem;
-  --background: oklch(0.995 0.003 300);
-  --foreground: oklch(0.24 0.05 293);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.24 0.05 293);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.24 0.05 293);
-  --primary: oklch(0.36 0.11 293);
-  --primary-foreground: oklch(0.985 0.003 300);
-  --secondary: oklch(0.955 0.02 300);
-  --secondary-foreground: oklch(0.3 0.08 293);
-  --muted: oklch(0.96 0.012 300);
-  --muted-foreground: oklch(0.5 0.04 293);
-  --accent: oklch(0.93 0.035 300);
-  --accent-foreground: oklch(0.3 0.08 293);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0.003 300);
-  --border: oklch(0.91 0.02 300);
-  --input: oklch(0.91 0.02 300);
-  --ring: oklch(0.55 0.09 293);
-  --lavender: oklch(0.9 0.045 300);
-  --lavender-soft: oklch(0.965 0.018 300);
-  --deep: oklch(0.25 0.08 293);
+  /* Luminous champagne-tinted lavender whites */
+  --background: #faf7fc;
+  --foreground: #242026;
+  --card: #ffffff;
+  --card-foreground: #242026;
+  --popover: #ffffff;
+  --popover-foreground: #242026;
+  /* Deep royal plum */
+  --primary: #2a103d;
+  --primary-foreground: #ffffff;
+  --plum-hover: #3e165b;
+  /* Champagne gold accent */
+  --secondary: #c5a059;
+  --secondary-foreground: #2a103d;
+  --muted: #f4ebf4;
+  --muted-foreground: #4b454d;
+  /* Soft mist lavender */
+  --accent: #ebe1f5;
+  --accent-foreground: #2a103d;
+  --destructive: #ba1a1a;
+  --destructive-foreground: #ffffff;
+  /* Fine champagne hairlines and plum input strokes */
+  --border: rgb(197 160 89 / 0.22);
+  --input: rgb(42 16 61 / 0.15);
+  --ring: #c5a059;
+  --lavender: #ebe1f5;
+  --lavender-soft: #f4ebf4;
+  --deep: #2a103d;
+  --gold: #c5a059;
 }
 
 .dark {
-  --background: oklch(0.17 0.04 293);
-  --foreground: oklch(0.95 0.01 300);
-  --card: oklch(0.22 0.06 293);
-  --card-foreground: oklch(0.95 0.01 300);
-  --popover: oklch(0.22 0.06 293);
-  --popover-foreground: oklch(0.95 0.01 300);
-  --primary: oklch(0.75 0.09 298);
-  --primary-foreground: oklch(0.17 0.04 293);
-  --secondary: oklch(0.26 0.06 293);
-  --secondary-foreground: oklch(0.95 0.01 300);
-  --muted: oklch(0.26 0.06 293);
-  --muted-foreground: oklch(0.7 0.03 293);
-  --accent: oklch(0.3 0.07 293);
-  --accent-foreground: oklch(0.95 0.01 300);
-  --destructive: oklch(0.704 0.191 22.216);
-  --destructive-foreground: oklch(0.985 0.003 300);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.55 0.09 293);
-  --lavender: oklch(0.35 0.06 293);
-  --lavender-soft: oklch(0.28 0.05 293);
-  --deep: oklch(0.14 0.04 293);
+  --background: #1e1a20;
+  --foreground: #f7eef7;
+  --card: #242026;
+  --card-foreground: #f7eef7;
+  --popover: #242026;
+  --popover-foreground: #f7eef7;
+  --primary: #dcbaf2;
+  --primary-foreground: #290f3c;
+  --plum-hover: #e9d0f8;
+  --secondary: #e9c176;
+  --secondary-foreground: #261900;
+  --muted: #2a2530;
+  --muted-foreground: #b9b0c0;
+  --accent: #332d3b;
+  --accent-foreground: #f7eef7;
+  --destructive: #ff5449;
+  --destructive-foreground: #ffffff;
+  --border: rgb(197 160 89 / 0.25);
+  --input: rgb(247 238 247 / 0.18);
+  --ring: #dcbaf2;
+  --lavender: #332d3b;
+  --lavender-soft: #28222e;
+  --deep: #17131b;
+  --gold: #e9c176;
 }
 
 @layer base {

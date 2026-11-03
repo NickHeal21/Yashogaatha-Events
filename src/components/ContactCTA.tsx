@@ -7,7 +7,7 @@ export function ContactCTA() {
     <section id="contact" className="scroll-mt-24 bg-background py-24 lg:py-32">
       <div className="mx-auto max-w-3xl px-6 text-center lg:px-10">
         <Reveal>
-          <p className="text-xs font-semibold uppercase tracking-[0.45em] text-primary/80">
+          <p className="text-xs font-semibold uppercase tracking-[0.45em] text-secondary">
             Get In Touch
           </p>
           <h2 className="mt-5 font-display text-4xl font-medium leading-tight text-foreground sm:text-5xl">
@@ -25,7 +25,7 @@ export function ContactCTA() {
               )}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-primary px-8 py-3.5 text-sm font-semibold text-primary-foreground transition-colors duration-300 hover:bg-primary/90"
+              className="inline-flex items-center gap-2 rounded-full bg-primary px-8 py-3.5 text-sm font-semibold text-primary-foreground transition-colors duration-300 hover:bg-primary-hover"
             >
               Plan Your Event
             </a>
@@ -33,7 +33,7 @@ export function ContactCTA() {
               href={whatsappLink("Hi Yashogaatha Events!")}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border border-primary/40 px-8 py-3.5 text-sm font-semibold text-primary transition-colors duration-300 hover:bg-accent"
+              className="inline-flex items-center gap-2 rounded-full border border-secondary px-8 py-3.5 text-sm font-semibold text-primary transition-colors duration-300 hover:bg-accent/50"
             >
               Chat With Us on WhatsApp
             </a>
