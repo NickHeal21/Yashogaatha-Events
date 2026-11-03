@@ -123,11 +123,11 @@ interface LightboxProps {
 }
 
 function GalleryLightbox({ items, index, onClose, onPrev, onNext }: LightboxProps) {
-  const isOpen = index !== null;
+  const item = index === null ? undefined : items[index];
 
   return (
     <AnimatePresence>
-      {isOpen && (
+      {item && (
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -161,12 +161,12 @@ function GalleryLightbox({ items, index, onClose, onPrev, onNext }: LightboxProp
           </button>
 
           <motion.img
-            key={items[index].src}
+            key={item.src}
             initial={{ opacity: 0, scale: 0.97 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.3 }}
-            src={items[index].src}
-            alt={items[index].alt}
+            src={item.src}
+            alt={item.alt}
             className="max-h-[82vh] max-w-5xl rounded-lg object-contain shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           />
@@ -184,7 +184,7 @@ function GalleryLightbox({ items, index, onClose, onPrev, onNext }: LightboxProp
           </button>
 
           <p className="absolute bottom-6 left-1/2 -translate-x-1/2 text-xs font-medium uppercase tracking-[0.3em] text-background/70">
-            {items[index].category} · {index + 1} / {items.length}
+            {item.category} · {(index ?? 0) + 1} / {items.length}
           </p>
         </motion.div>
       )}
