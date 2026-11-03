@@ -20,8 +20,7 @@ export function HeroSection() {
         <img
           src={heroAsset.url}
           alt="Canopy of flowers and handcrafted woven lanterns at a Yashogaatha celebration"
-          className="h-full w-full object-cover object-center"
-          {...(reduceMotion ? {} : { class: "hero-zoom" })}
+          className={`h-full w-full object-cover object-center ${reduceMotion ? "" : "hero-zoom"}`}
           fetchPriority="high"
         />
         {/* Purple-tinted overlay for text readability */}
