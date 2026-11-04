@@ -19,11 +19,11 @@ import galleryCelebration from "@/assets/gallery/celebration.jpg";
  * format without "+" or spaces (e.g. "919876543210").
  */
 export const CONTACT = {
-  whatsappNumber: "919999999999", // TODO: replace with the real WhatsApp number
-  phoneDisplay: "+91 XXXXX XXXXX", // TODO: replace with the real phone number
-  email: "hello@your-domain.com", // TODO: replace with the real email address
-  location: "Your City, India", // TODO: replace with the real location
-  instagramUrl: "#", // TODO: replace with the real Instagram profile URL
+  whatsappNumber: "7378650036", // TODO: replace with the real WhatsApp number
+  phoneDisplay: "+91 73786 50036", // TODO: replace with the real phone number
+  email: "yashogaatha.events@gmail.com", // TODO: replace with the real email address
+  location: "Pune, India", // TODO: replace with the real location
+  instagramUrl: "https://www.instagram.com/yashogaatha_events/", // TODO: replace with the real Instagram profile URL
 };
 
 /** Builds a WhatsApp chat link with an optional pre-filled first message. */

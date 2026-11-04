@@ -38,7 +38,7 @@ export function ContactCTA() {
               Chat With Us on WhatsApp
             </a>
             <a
-              href="tel:+919999999999"
+              href="tel:+917378650036"
               className="inline-flex items-center gap-2 rounded-full px-4 py-3.5 text-sm font-semibold text-muted-foreground transition-colors hover:text-primary sm:px-2"
             >
               <Phone className="h-4 w-4" />

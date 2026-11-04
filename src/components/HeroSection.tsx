@@ -1,6 +1,6 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import heroAsset from "@/assets/hero-celebration.jpg.asset.json";
+import heroImage from "@/assets/heroAsset/Yashogaatha Front Page Photo.jpeg";
 
 const easeOut = [0.22, 1, 0.36, 1] as const;
 
@@ -18,7 +18,7 @@ export function HeroSection() {
       {/* Background photograph — slow, subtle zoom (disabled for reduced motion) */}
       <div className="absolute inset-0">
         <img
-          src={heroAsset.url}
+          src={heroImage}
           alt="Canopy of flowers and handcrafted woven lanterns at a Yashogaatha celebration"
           className={`h-full w-full object-cover object-center ${reduceMotion ? "" : "hero-zoom"}`}
           fetchPriority="high"

@@ -33,7 +33,7 @@ export function AboutSection() {
           <div className="relative pb-14 pl-0 sm:pl-14 sm:pb-14">
             <div className="overflow-hidden rounded-lg shadow-soft">
               <img
-                src={ABOUT_IMAGES.primary}
+                src={ABOUT_IMAGES.secondary}
                 alt="Wedding mandap decorated with flowers at sunset"
                 loading="lazy"
                 width={1024}
@@ -43,7 +43,7 @@ export function AboutSection() {
             </div>
             <div className="absolute bottom-0 left-0 hidden w-2/5 overflow-hidden rounded-lg shadow-float ring-8 ring-lavender-soft sm:block">
               <img
-                src={ABOUT_IMAGES.secondary}
+                src={ABOUT_IMAGES.primary}
                 alt="Intimate garden dinner with lanterns and candles"
                 loading="lazy"
                 width={1024}
