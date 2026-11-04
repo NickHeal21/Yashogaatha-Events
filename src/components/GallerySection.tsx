@@ -7,12 +7,12 @@ import { cn } from "@/lib/utils";
 
 /** Editorial grid placement for each photograph (Tailwind span classes). */
 const GRID_PLACEMENT = [
-  "col-span-2 row-span-2",
-  "col-span-1 row-span-1",
-  "col-span-1 row-span-1",
-  "col-span-2 row-span-1",
-  "col-span-1 row-span-1",
-  "col-span-3 row-span-1 sm:col-span-2",
+  "col-span-full row-span-1 sm:col-span-2 sm:row-span-2",
+  "col-span-full row-span-1 sm:col-span-1 sm:row-span-1",
+  "col-span-full row-span-1 sm:col-span-1 sm:row-span-1",
+  "col-span-full row-span-1 sm:col-span-2 sm:row-span-1",
+  "col-span-full row-span-1 sm:col-span-1 sm:row-span-1",
+  "col-span-full row-span-1 sm:col-span-2 sm:row-span-1",
 ];
 
 export function GallerySection() {
@@ -59,7 +59,7 @@ export function GallerySection() {
         </Reveal>
 
         {/* Editorial grid with varied image sizes */}
-        <div className="mt-16 grid auto-rows-[160px] grid-cols-2 gap-3 sm:auto-rows-[200px] sm:grid-cols-4 sm:gap-4 lg:auto-rows-[230px]">
+        <div className="mt-16 grid auto-rows-[220px] grid-cols-1 gap-3 sm:auto-rows-[200px] sm:grid-cols-4 sm:gap-4 lg:auto-rows-[230px]">
           {GALLERY.map((item, index) => (
             <Reveal
               key={item.src}

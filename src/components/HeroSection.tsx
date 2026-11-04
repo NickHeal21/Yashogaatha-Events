@@ -13,7 +13,7 @@ import heroImage7 from "@/assets/heroAsset/Yashogaatha Front Page Photo 7.png";
 const HERO_IMAGES = [heroImage, heroImage1, heroImage2, heroImage3, heroImage4, heroImage5, heroImage6, heroImage7];
 const IMAGE_INTERVAL_MS = 4000;
 
-const easeOut = [0.22, 1, 0.36, 1] as const;``
+const easeOut = [0.22, 1, 0.36, 1] as const;
 
 const fadeUp = (delay: number) => ({
   initial: { opacity: 0, y: 28 },
