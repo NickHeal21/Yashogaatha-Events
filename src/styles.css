@@ -1,0 +1,161 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Yashogaatha Events — design system ("Regal Grandeur").
+ *
+ * Deep royal plum (#2A103D) anchored by champagne gold (#C5A059) accents,
+ * mist lavender layering (#EBE1F5) and luminous champagne-tinted whites.
+ * Headlines in Playfair Display, body in Plus Jakarta Sans.
+ */
+
+@theme {
+  --font-display: "Playfair Display", "Georgia", serif;
+  --font-body: "Plus Jakarta Sans", "Helvetica Neue", sans-serif;
+}
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-hover: var(--plum-hover);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  /* Brand extras */
+  --color-lavender: var(--lavender);
+  --color-lavender-soft: var(--lavender-soft);
+  --color-deep: var(--deep);
+  --color-gold: var(--gold);
+  /* Ethereal plum-tinted elevation */
+  --shadow-soft: 0 18px 44px -20px rgb(42 16 61 / 0.18);
+  --shadow-float: 0 24px 60px -24px rgb(42 16 61 / 0.28);
+}
+
+:root {
+  --radius: 0.25rem;
+  /* Luminous champagne-tinted lavender whites */
+  --background: #faf7fc;
+  --foreground: #242026;
+  --card: #ffffff;
+  --card-foreground: #242026;
+  --popover: #ffffff;
+  --popover-foreground: #242026;
+  /* Deep royal plum */
+  --primary: #2a103d;
+  --primary-foreground: #ffffff;
+  --plum-hover: #3e165b;
+  /* Champagne gold accent */
+  --secondary: #c5a059;
+  --secondary-foreground: #2a103d;
+  --muted: #f4ebf4;
+  --muted-foreground: #4b454d;
+  /* Soft mist lavender */
+  --accent: #ebe1f5;
+  --accent-foreground: #2a103d;
+  --destructive: #ba1a1a;
+  --destructive-foreground: #ffffff;
+  /* Fine champagne hairlines and plum input strokes */
+  --border: rgb(197 160 89 / 0.22);
+  --input: rgb(42 16 61 / 0.15);
+  --ring: #c5a059;
+  --lavender: #ebe1f5;
+  --lavender-soft: #f4ebf4;
+  --deep: #2a103d;
+  --gold: #c5a059;
+}
+
+.dark {
+  --background: #1e1a20;
+  --foreground: #f7eef7;
+  --card: #242026;
+  --card-foreground: #f7eef7;
+  --popover: #242026;
+  --popover-foreground: #f7eef7;
+  --primary: #dcbaf2;
+  --primary-foreground: #290f3c;
+  --plum-hover: #e9d0f8;
+  --secondary: #e9c176;
+  --secondary-foreground: #261900;
+  --muted: #2a2530;
+  --muted-foreground: #b9b0c0;
+  --accent: #332d3b;
+  --accent-foreground: #f7eef7;
+  --destructive: #ff5449;
+  --destructive-foreground: #ffffff;
+  --border: rgb(197 160 89 / 0.25);
+  --input: rgb(247 238 247 / 0.18);
+  --ring: #dcbaf2;
+  --lavender: #332d3b;
+  --lavender-soft: #28222e;
+  --deep: #17131b;
+  --gold: #e9c176;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Slow, subtle zoom on the hero photograph (skipped for reduced motion). */
+@utility hero-zoom {
+  animation: hero-zoom 24s ease-out forwards;
+  transform-origin: center;
+}
+
+@keyframes hero-zoom {
+  from {
+    transform: scale(1.08);
+  }
+  to {
+    transform: scale(1);
+  }
+}
