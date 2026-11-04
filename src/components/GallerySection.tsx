@@ -7,12 +7,12 @@ import { cn } from "@/lib/utils";
 
 /** Editorial grid placement for each photograph (Tailwind span classes). */
 const GRID_PLACEMENT = [
-  "col-span-2 row-span-2",
-  "col-span-1 row-span-1",
-  "col-span-1 row-span-1",
-  "col-span-2 row-span-1",
-  "col-span-1 row-span-1",
-  "col-span-3 row-span-1 sm:col-span-2",
+  "col-span-full row-span-1 sm:col-span-2 sm:row-span-2",
+  "col-span-full row-span-1 sm:col-span-1 sm:row-span-1",
+  "col-span-full row-span-1 sm:col-span-1 sm:row-span-1",
+  "col-span-full row-span-1 sm:col-span-2 sm:row-span-1",
+  "col-span-full row-span-1 sm:col-span-1 sm:row-span-1",
+  "col-span-full row-span-1 sm:col-span-2 sm:row-span-1",
 ];
 
 export function GallerySection() {
